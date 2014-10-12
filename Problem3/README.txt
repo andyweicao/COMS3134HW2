@@ -1,0 +1,4 @@
+1. Compile the file by "javac *.java".
+2. run the programm by typing "java BinarySearchTree" and you will see the result.
+
+This code is the lazy deletion version modified on the original BST Java code from the Weiss website. All the methods in the code have been slightly changed for the requirement of lazy deletion. I add a boolean value "delete" to the treenode property to show whether the node is marked as "deleted" or not. So when the node is processed as removed, it is not actually removed from the tree. It will be marked as "deleted" and it is still there. Then each method will check the "delete" mark for their process. I add the comments for the modified parts in the code. When printing out the tree, the "deleted" nodes will show both delete message and their original values. The testing part is the same as the original Weiss version.
